@@ -19,18 +19,13 @@ module Luhn
       checkArray << x
     end
 
-    puts checkArray
-
     checkNum = 0
 
     checkArray.each do |x|
       checkNum += x
     end
 
-    puts checkNum
     return checkNum % 10 == 0 
     
   end
 end
-
-puts Luhn.is_valid?(377681478627336)
